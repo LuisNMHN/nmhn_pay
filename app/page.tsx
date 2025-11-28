@@ -37,7 +37,7 @@ export default function HomePage() {
             <div className="grid gap-8 sm:gap-12 lg:grid-cols-2 lg:gap-16 xl:gap-20 max-w-7xl mx-auto">
               <div className="flex flex-col justify-center space-y-4 sm:space-y-6 lg:space-y-8 order-1">
                 <div className="inline-flex items-center rounded-full border border-yellow-500/30 bg-yellow-500/10 px-3 py-1 text-xs font-medium text-yellow-600 dark:text-yellow-400 mb-2 animate-text-reveal animation-delay-100">
-                  🚀 Versión Beta - Próximamente disponible
+                  Versión Beta – Algunas funciones están en desarrollo
                 </div>
                 <h1 className="text-3xl font-bold tracking-tight text-balance sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl animate-text-reveal animation-delay-200">
                   Gestiona tus servicios y solicitudes de cobro desde una plataforma simple y profesional
