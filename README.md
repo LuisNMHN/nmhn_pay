@@ -7,47 +7,49 @@
 
 ## 📋 Descripción
 
-**NMHN Pay** es una plataforma digital que ofrece herramientas para apoyar a emprendedores, freelancers y consultores hondureños en la gestión de sus servicios profesionales. La plataforma facilita la creación de solicitudes de cobro digitales, la administración de actividades y el acceso a funciones diseñadas para impulsar su crecimiento.
+**NMHN Pay** es una plataforma digital diseñada para apoyar a emprendedores, freelancers y consultores hondureños en la gestión de sus servicios profesionales.  
+A través de herramientas intuitivas, los usuarios pueden crear solicitudes de cobro, organizar sus actividades y acceder a funciones digitales que impulsan su operación diaria.
 
 ### ⚠️ Importante
 
-**NMHN Pay no es una entidad financiera ni ofrece servicios bancarios.** No opera como billetera electrónica, no realiza cambio de divisas y no presta servicios de envío de dinero. Nuestro enfoque es brindar herramientas tecnológicas y funcionalidades digitales que complementan la actividad comercial de nuestros usuarios.
+**NMHN Pay no es una entidad financiera ni ofrece servicios bancarios.**  
+No opera como billetera electrónica, no realiza cambio de divisas y no presta servicios de envío de dinero.  
+Todo procesamiento de cobros se realiza exclusivamente mediante proveedores externos certificados.
 
 ## 🎯 Objetivo
 
-El objetivo de NMHN Pay es proporcionar una solución tecnológica accesible para que emprendedores, freelancers y consultores hondureños puedan:
+El objetivo de NMHN Pay es proporcionar una solución tecnológica accesible para que profesionales hondureños puedan:
 
-- **Gestionar cobros digitales** de manera sencilla y profesional
-- **Crear solicitudes de cobro** personalizadas para sus servicios
-- **Administrar sus actividades** comerciales desde un panel centralizado
-- **Acceder a funciones premium** mediante el sistema de créditos HNLD
-- **Impulsar su crecimiento** con herramientas diseñadas específicamente para el mercado hondureño
+- Gestionar solicitudes de cobro de forma sencilla y profesional  
+- Administrar sus actividades desde un panel organizado  
+- Acceder a funciones premium mediante créditos internos (HNLD)  
+- Optimizar su presencia digital con herramientas diseñadas para su industria  
+- Impulsar el crecimiento de sus servicios mediante herramientas modernas
 
 ## 🚀 Características Principales
 
-- ✅ **Solicitudes de cobro digitales**: Crea y gestiona solicitudes de pago de forma sencilla
-- ✅ **Panel de administración**: Gestiona tus servicios profesionales desde un solo lugar
-- ✅ **Sistema de créditos HNLD**: Accede a funciones premium mediante créditos internos
-- ✅ **Diseño responsive**: Optimizado para cualquier dispositivo
-- ✅ **Interfaz moderna**: UI/UX diseñada con las mejores prácticas
-- ✅ **Seguridad**: Implementación de estándares de seguridad PCI-DSS para procesamiento de pagos
+- ✅ **Solicitudes de cobro**: Genera solicitudes digitales para tus servicios  
+- ✅ **Interfaz moderna y profesional**  
+- ✅ **Créditos internos (HNLD)**: Activa funciones premium dentro de la plataforma  
+- ✅ **Diseño responsive**: Adaptado a cualquier dispositivo  
+- ✅ **Frontend seguro**: Buenas prácticas de seguridad en aplicaciones web modernas  
+- ✅ **Procesamiento externo de cobros**: A través de proveedores certificados PCI-DSS
 
 ## 🛠️ Tecnologías Utilizadas
 
-- **Framework**: [Next.js 15](https://nextjs.org/) (App Router)
+- **Framework**: Next.js 15 (App Router)
 - **Lenguaje**: TypeScript
 - **Estilos**: Tailwind CSS
 - **Componentes UI**: shadcn/ui
 - **Iconos**: Lucide React
-- **Animaciones**: CSS personalizado
 
 ## 📦 Requisitos Previos
 
-Antes de comenzar, asegúrate de tener instalado:
+Asegúrate de tener instalado:
 
-- **Node.js** 18.0 o superior
-- **npm** o **yarn** o **pnpm** como gestor de paquetes
-- **Git** para clonar el repositorio
+- **Node.js** 18+
+- **npm**, **yarn** o **pnpm**
+- **Git**
 
 ## 🔧 Instalación y Configuración
 
@@ -56,151 +58,120 @@ Antes de comenzar, asegúrate de tener instalado:
 ```bash
 git clone https://github.com/LuisNMHN/nmhn_pay.git
 cd nmhn_pay
-```
-
-### 2. Instalar dependencias
-
-```bash
+2. Instalar dependencias
+bash
+Copiar código
 npm install
 # o
 yarn install
-# o
-pnpm install
-```
-
-### 3. Configurar variables de entorno (si es necesario)
-
-Crea un archivo `.env.local` en la raíz del proyecto si necesitas configurar variables de entorno:
-
-```env
-# Ejemplo de variables de entorno (ajustar según necesidades)
+3. Variables de entorno (si se requieren)
+env
+Copiar código
 NEXT_PUBLIC_APP_URL=http://localhost:3000
-```
-
-### 4. Ejecutar el servidor de desarrollo
-
-```bash
+4. Ejecutar en desarrollo
+bash
+Copiar código
 npm run dev
-# o
-yarn dev
-# o
-pnpm dev
-```
+5. Abrir en el navegador
+http://localhost:3000
 
-### 5. Abrir en el navegador
-
-Abre [http://localhost:3000](http://localhost:3000) en tu navegador para ver la aplicación.
-
-## 📁 Estructura del Proyecto
-
-```
+📁 Estructura del Proyecto
+csharp
+Copiar código
 nmhn_pay/
-├── app/                    # Páginas y rutas de Next.js
-│   ├── contacto/          # Página de contacto
-│   ├── terminos/          # Términos y condiciones
-│   ├── privacidad/        # Política de privacidad
-│   ├── layout.tsx         # Layout principal
-│   ├── page.tsx           # Página principal
-│   └── globals.css        # Estilos globales
-├── components/             # Componentes React
-│   ├── ui/                # Componentes UI (shadcn/ui)
-│   ├── header.tsx         # Header/Navegación
-│   ├── footer.tsx         # Footer
-│   └── ...                # Otros componentes
-├── lib/                   # Utilidades y helpers
-├── public/                # Archivos estáticos
-├── styles/                # Estilos adicionales
-└── package.json           # Dependencias del proyecto
-```
+├── app/                    # Rutas y páginas
+│   ├── contacto/
+│   ├── terminos/
+│   ├── privacidad/
+│   ├── layout.tsx
+│   ├── page.tsx
+│   └── globals.css
+├── components/
+│   ├── ui/                # Componentes shadcn/ui
+│   ├── header.tsx
+│   ├── footer.tsx
+├── lib/
+├── public/
+├── styles/
+└── package.json
+🎨 Scripts
+bash
+Copiar código
+npm run dev       # Desarrollo
+npm run build     # Producción
+npm run start     # Ejecutar en producción
+npm run lint      # Linter
+📄 Páginas Incluidas
+/ → Landing page completa
 
-## 🎨 Scripts Disponibles
+Hero
 
-```bash
-# Desarrollo
-npm run dev          # Inicia el servidor de desarrollo
+Sobre NMHN Pay
 
-# Producción
-npm run build        # Construye la aplicación para producción
-npm run start        # Inicia el servidor de producción
+Servicios
 
-# Utilidades
-npm run lint         # Ejecuta el linter
-```
+Cómo funciona
 
-## 📄 Páginas Incluidas
+Créditos internos HNLD
 
-- **Página Principal** (`/`): Landing page con todas las secciones
-  - Hero section
-  - Sobre NMHN Pay
-  - Servicios
-  - Cómo funciona
-  - Créditos internos (HNLD)
-  - Planes y precios
-  - Por qué elegirnos
-  - Preguntas frecuentes (FAQ)
-  - Call to action
+Planes y precios
 
-- **Contacto** (`/contacto`): Formulario de contacto con validaciones
+Beneficios
 
-- **Términos y Condiciones** (`/terminos`): Términos de uso de la plataforma
+FAQ
 
-- **Política de Privacidad** (`/privacidad`): Política de privacidad y protección de datos
+Contacto
 
-## 🔒 Seguridad y Privacidad
+/contacto → Formulario de contacto
 
-NMHN Pay está comprometido con la seguridad y privacidad de los usuarios:
+/terminos → Términos y Condiciones
 
-- **Procesamiento de pagos**: Utilizamos proveedores externos certificados (PCI-DSS)
-- **No almacenamos datos sensibles**: No guardamos información completa de tarjetas de pago
-- **Cifrado de datos**: Implementamos cifrado de datos en tránsito
-- **Acceso restringido**: Control de acceso basado en roles
-- **Monitoreo continuo**: Auditorías regulares y detección de fraude
+/privacidad → Política de Privacidad
 
-Para más información, consulta nuestra [Política de Privacidad](/privacidad) y [Términos y Condiciones](/terminos).
+🔒 Seguridad y Privacidad
+NMHN Pay está comprometido con la protección de los datos del usuario:
 
-## 📞 Contacto
+Procesamiento externo de cobros mediante proveedores certificados PCI-DSS
 
-Para consultas, soporte o más información:
+No almacenamos información completa de tarjetas
 
-- **Email**: soporte@netmarkethn.com
-- **Teléfono**: +504 9279-0292
-- **Horario**: Lunes - Viernes: 8:00 AM - 6:00 PM
+Buenas prácticas de seguridad web en el frontend
 
-## 📝 Licencia
+Cifrado en tránsito mediante HTTPS
 
-Este proyecto es propiedad de **NETMARKETHN LLC**. Todos los derechos reservados.
+Para más información, consulta:
+👉 Política de Privacidad
+👉 Términos y Condiciones
 
-© 2025 NETMARKETHN LLC. Todos los derechos reservados.
+📞 Contacto
+Email: soporte@netmarkethn.com
 
-## 🤝 Contribuciones
+Teléfono: +504 9279-0292
 
-Actualmente, este es un proyecto privado. Para consultas sobre contribuciones o colaboraciones, por favor contacta a través de los canales oficiales mencionados arriba.
+Horario: Lunes a Viernes, de 8:00 AM a 6:00 PM
 
-## 📚 Documentación Adicional
+📝 Licencia
+Este proyecto es propiedad de NETMARKETHN LLC.
+© 2025 Todos los derechos reservados.
 
-- [Términos y Condiciones](/terminos)
-- [Política de Privacidad](/privacidad)
-- [Preguntas Frecuentes](/#faq)
+🤝 Contribuciones
+Este proyecto es privado.
+Para consultas sobre colaboraciones, comuníquese mediante los canales oficiales.
 
-## 🚧 Estado del Proyecto
+🚧 Estado del Proyecto
+NMHN Pay se encuentra en desarrollo activo.
+Las funcionalidades serán habilitadas progresivamente.
 
-Este proyecto se encuentra en desarrollo activo. Algunas funcionalidades pueden estar en construcción y estarán disponibles próximamente.
+⚡ Próximas Funcionalidades
+ Activación de créditos internos (HNLD)
 
-## ⚡ Próximas Funcionalidades
+ Panel informativo ampliado
 
-- [ ] Sistema de autenticación de usuarios
-- [ ] Panel de administración completo
-- [ ] Integración con pasarelas de pago
-- [ ] Sistema de créditos HNLD funcional
-- [ ] API para integraciones externas
+ Integración con proveedores externos de cobro
 
-## 📊 Versión
+ Nuevas herramientas digitales para usuarios
 
-**Versión actual**: 1.0.0
+ Opciones avanzadas para emprendedores
 
----
-
-**Desarrollado con ❤️ para emprendedores hondureños**
-
-Para más información, visita nuestro sitio web o contáctanos a través de los canales oficiales.
-
+📊 Versión
+Versión actual: 1.0.0
